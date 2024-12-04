@@ -47,6 +47,16 @@ body {
     text-decoration: none;
 }
 
+#api5 img {
+    height: 200px;
+    width: 170px;
+
+}
+
+#api6 img {
+    height: 200px;
+    width: 170px;
+}
 
 #actions {
     display: flex;
