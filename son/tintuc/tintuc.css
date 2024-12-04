@@ -1,0 +1,67 @@
+/* Cấu trúc cơ bản */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Chứa các phần tử trang */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Tiêu đề */
+.title {
+    text-align: center;
+    color: #333;
+    font-size: 36px;
+}
+
+/* Khu vực chứa các tin tức */
+.news-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Mỗi bài tin tức */
+.news-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.news-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Định dạng ảnh của tin tức */
+.news-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Tiêu đề và mô tả của bài tin */
+.news-item h3 {
+    font-size: 24px;
+    color: #007bff;
+    margin: 0;
+}
+
+.news-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Đường link */
+.news-item a {
+    color: #007bff;
+    text-decoration: none;
+}
