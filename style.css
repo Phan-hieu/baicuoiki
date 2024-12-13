@@ -413,3 +413,105 @@ img {
     margin-top: 29px;
     color: #fff;
 }
+
+/* menu */
+#menu {
+    margin-right: 100px;
+}
+
+.menu {
+    background: #333;
+    color: white;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu>li {
+    flex: 1;
+}
+
+/* Top-level menu items */
+.menu>li>a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    background: #333;
+    transition: background 0.3s;
+}
+
+.menu>li>a:hover {
+    background: #444;
+}
+
+/* Dropdown menu */
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #444;
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 200px;
+    z-index: 1000;
+}
+
+.submenu li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    background: #444;
+    transition: background 0.3s;
+}
+
+.submenu li a:hover {
+    background: #555;
+}
+
+/* Submenu visibility */
+.menu li:hover>.submenu {
+    display: block;
+}
+
+/* Multi-level dropdown */
+.submenu .submenu {
+    left: 100%;
+    top: 0;
+}
+
+/* Arrow indicator for dropdown */
+.menu li a:after {
+    content: '\25BC';
+    font-size: 12px;
+    margin-left: 8px;
+}
+
+.menu li .submenu li a:after {
+    content: '';
+}
+
+.menu li .submenu li a.has-submenu:after {
+    content: '\25B6';
+    float: right;
+}
+
+/* logo */
+.logo img {
+    width: 100%;
+    /* Logo sẽ chiếm toàn bộ chiều rộng của container */
+    max-width: 90px;
+    /* Giới hạn chiều rộng tối đa */
+    height: auto;
+    /* Giữ nguyên tỉ lệ */
+}

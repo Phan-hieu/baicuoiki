@@ -24,7 +24,7 @@ async function fetchUsers() {
     }
 }
 
-// Hàm hiển thị danh sách người dùng
+// hiển thị danh sách người dùng
 function renderUsers(users) {
     // Xóa nội dung cũ trước khi hiển thị
     list.innerHTML = '';
@@ -54,10 +54,10 @@ function filterUsers(users, searchTerm) {
 
 // Hàm chính để gọi API và xử lý sự kiện
 async function main() {
-    // Lấy danh sách người dùng từ API
+    // Lấy người dùng từ API
     const users = await fetchUsers();
 
-    // Hiển thị toàn bộ danh sách người dùng ban đầu
+    // Hiển thị danh sách người dùng ban đầu
     renderUsers(users);
 
     // Thêm sự kiện tìm kiếm

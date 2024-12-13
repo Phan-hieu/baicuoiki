@@ -1,6 +1,6 @@
 // API Key của bạn từ NewsAPI
 const apiKey = '5aee14a15a574cd392cd7d039d603477';
-const apiUrl = `https://newsapi.org/v2/everything?q=tesla&from=2024-10-30&sortBy=publishedAt&apiKey=5aee14a15a574cd392cd7d039d603477`;
+const apiUrl = `https://newsapi.org/v2/everything?q=tesla&from=2024-14-12&sortBy=publishedAt&apiKey=5aee14a15a574cd392cd7d039d603477`;
 
 async function fetchNews() {
     try {
