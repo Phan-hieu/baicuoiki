@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Web Demo Api </title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -14,14 +17,17 @@
     <div id="wrapper">
         <div id="header">
             <a href="" class="logo">
-                <img src="https://static.vecteezy.com/ti/gratis-vector/p3/9628720-dtf-logo-dtf-letter-dtf-letter-logo-design-initialen-dtf-logo-linked-with-circle-and-hoofdletter-monogram-logo-dtf-typography-for-technology-business-and-real-landgoed-merk-vector.jpg"
+                <img src="https://newsapi.org/v2/everything?q=tesla&from=2024-14-12&sortBy=publishedAt&apiKey=5aee14a15a574cd392cd7d039d603477"
                     alt="">
             </a>
             <div id="menu">
                 <ul class="menu">
-                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./index.html">Home
+                            <i class="fa-solid fa-house"></i>
+                        </a></li>
                     <li>
-                        <a href="#">Hiếu</a>
+                        <a href="#">Hiếu<i class="fa-solid fa-user"></i>
+                        </a>
                         <ul class="submenu">
                             <li><a href="./WeatherAPI/thoitietkey.html">Kiểm tra thời tiết các tỉnh </a></li>
                             <li><a href="./thongtinquocgia/thongtinquocgia.html">Tìm thông tin Quốc Gia</a></li>
@@ -30,21 +36,21 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#">Nhân</a>
+                        <a href="#">Nhân<i class="fa-solid fa-user"></i></a>
                         <ul class="submenu">
                             <li><a href="./githupAPI/githupapi.html">GitHub REST API</a></li>
                             <li><a href="./meocho/meocho.html">Thông Tin Mèo</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#">Sơn</a>
+                        <a href="#">Sơn<i class="fa-solid fa-user"></i></a>
                         <ul class="submenu">
                             <li><a href="./thuoc/thuoc.html">tìm kiếm thuốc</a></li>
                             <li><a href="./tintuc/tintuc.html">Tin Tức Ngày Mới</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#">Phước</a>
+                        <a href="#">Phước<i class="fa-solid fa-user"></i></a>
                         <ul class="submenu">
                             <li><a href="./OpenWeatherMap/thoitiet.html"> Dự Báo Thời TIết các tp</a></li>
                             <li><a href="./nhac/nhạc.html">tìm kím bài hát</a></li>
@@ -186,12 +192,16 @@
                 </ul>
             </div>
             <div class="box">
-                <h3>LIÊN HỆ</h3>
+                <h3>LIÊN HỆ </h3>
                 <form action="">
                     <input type="text" placeholder="Địa chỉ email">
+
                     <button>Nhận tin</button>
+
                 </form>
+
             </div>
+
         </div>
     </div>
     <script src="script.js"></script>
